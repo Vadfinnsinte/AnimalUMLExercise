@@ -7,7 +7,7 @@
         {
             if (!IsIndoor)
             {
-                Console.WriteLine("Let meee out right MEOOW!");
+                Console.WriteLine("Let meee out! MEOOW!");
 
             }
             else

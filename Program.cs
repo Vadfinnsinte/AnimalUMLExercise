@@ -16,27 +16,21 @@ namespace AnimalUMLExercise
 
             Dog secondDog = new Dog(); 
 
-            secondDog.Name = "Ghost";
-            secondDog.Age = 3;
-            secondDog.Species = "Canine";
-            secondDog.Breed = "Husky";
-
+            secondDog.CreateDog("Ghost", "Canine", 3, "Husky");
+    
             secondDog.MakeSound();
 
             Cat firstCat = new Cat();
             firstCat.Name = "Jerry";
-            firstCat.Age = 2;
             firstCat.Species = "Feline";
+            firstCat.Age = 2;
             firstCat.IsIndoor = true;
 
             firstCat.MakeSound();
 
             Cat secondCat = new Cat();
-            secondCat.Name = "Tom";
-            secondDog.Age = 5;
-            secondCat.Species = "Feline";
-            secondCat.IsIndoor = false;
-
+            secondCat.CreateCat(secondCat.Name = "Tom", secondCat.Species = "Feline", secondCat.Age = 5, secondCat.IsIndoor = false);
+      
             secondCat.MakeSound();
         }
     }

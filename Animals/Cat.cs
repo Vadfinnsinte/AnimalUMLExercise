@@ -3,16 +3,25 @@
     internal class Cat : Animal
     {
         public bool IsIndoor { get; set; }
+        public void CreateCat(string name, string species, int age, bool isIndoor)
+        {
+            Name = name;
+            Species = species;
+            Age = age;
+            IsIndoor = isIndoor;
+
+
+        }
         public override void MakeSound()
         {
             if (!IsIndoor)
             {
-                Console.WriteLine("Let meee out! MEOOW!");
+                Console.WriteLine($"{Name} says: Let meee out! MEOOW!");
 
             }
             else
             {
-                Console.WriteLine("Meow! "); 
+                Console.WriteLine($"{Name} says:Meow! "); 
             }
         }
     }
